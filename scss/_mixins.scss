@@ -1,0 +1,36 @@
+$textcolor:#fff;
+$textcolor-2:#e73131;
+$background-color:#ff0000;
+@mixin comman-section {
+  text-align: center;
+  padding: 2% 0%;
+}
+@mixin linecode {
+  border: 1px solid #e73131;
+  width:11%;
+  margin: 0 auto;
+}
+@mixin commancode($font-change,$chcolor,$f-weight,$t-transform) {
+  color: $chcolor;
+  font-size: $font-change;
+  font-weight: $f-weight;
+  text-transform: $t-transform;
+}
+@mixin headingcode {
+  color: #555;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+@mixin paracode($textcolor) {
+  font-size: 13px;
+  color:$textcolor ;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: 'open_sansregular';
+}
+@mixin displaycode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
